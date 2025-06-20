@@ -154,7 +154,7 @@ The analysis generates the following outputs:
 - High remote work (48%) and flexibility needs
 - Recommendation: Flexible solutions, virtual communities, financial support
 
-## Universal Findings
+## 🌐 Universal Findings
 
 - Stigma Impact: ~40% across all clusters fear career damage
 - Treatment Effectiveness: 10x reduction in work interference when treated
