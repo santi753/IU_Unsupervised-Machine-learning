@@ -1,3 +1,5 @@
+<!-- Project banner -->
+![Mental Health in Tech Survey Analysis](github-header-image.png)
 # Mental Health in Tech Survey Analysis
 
 A comprehensive data science project analyzing mental health patterns in technology workplaces using unsupervised machine learning to identify distinct employee segments for targeted HR interventions.
@@ -54,7 +56,7 @@ The analysis provides HR leadership with:
 Install all required dependencies using pip:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy
+pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy jupyter
 ```
 
 ## 🚀 How to Run
@@ -62,13 +64,13 @@ pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/santi753/IU_Unsupervided-Machine-learning.git
-cd IU_Unsupervided-Machine-learning
+git clone https://github.com/santi753/IU_Unsupervised-Machine-learning.git
+cd IU_Unsupervised-Machine-learning
 ```
 
 ### Step 2: Verify Dataset
 
-The dataset `mental-heath-in-tech-2016_20161114.csv` is already included in the repository.
+The dataset `mental-health-in-tech-2016_20161114.csv` is already included in the repository or at https://www.kaggle.com/datasets/osmi/mental-health-in-tech-2016.
 
 ### Step 3: Run the Analysis
 
