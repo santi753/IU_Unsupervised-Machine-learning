@@ -37,14 +37,18 @@ The analysis provides HR leadership with:
 
 ## 🛠️ Installation & Setup
 
-Prerequisites
+### Prerequisites
 
-bashPython 3.7+
+Python 3.7+
+```
 pip package manager
-Required Libraries
-bashpip install pandas numpy matplotlib seaborn scikit-learn openpyxl
-Optional (for advanced analysis)
-bashpip install jupyter notebook
+```
+
+### Required Libraries
+
+```
+pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy
+``` 
 
 ## 🚀 How to Run
 
