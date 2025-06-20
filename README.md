@@ -82,8 +82,8 @@ The dataset `mental-health-in-tech-2016_20161114.csv` is already included in the
    ```
 
 2. Open and run the notebooks in the following order:
-   - `Preprocessed_2.ipynb` (data cleaning and preprocessing)
-   - `Modeling4.ipynb` (clustering analysis and results)
+   - `Preprocessing.ipynb` (data cleaning and preprocessing)
+   - `Clustering.ipynb` (clustering analysis and results)
 
 #### Option B: Python Scripts
 
@@ -91,14 +91,14 @@ If you prefer to run the notebooks as Python scripts:
 
 1. Convert notebooks to Python scripts:
    ```bash
-   jupyter nbconvert --to script Preprocessed_2.ipynb
-   jupyter nbconvert --to script Modeling4.ipynb
+   jupyter nbconvert --to script Preprocessing.ipynb
+   jupyter nbconvert --to script Clustering.ipynb
    ```
 
 2. Run the scripts in order:
    ```bash
-   python Preprocessed_2.py  # Data cleaning and preprocessing
-   python Modeling4.py       # Clustering analysis and results
+   python Preprocessing.py  # Data cleaning and preprocessing
+   python Clustering.py      # Clustering analysis and results
    ```
 
 ### Step 4: View Results
@@ -112,7 +112,7 @@ The analysis generates the following outputs:
 
 ## 🔍 Analysis Pipeline
 
-1. Data Preprocessing (Preprocessed_2.py)
+1. Data Preprocessing (Preprocessing.ipynb)
 
 - Geographic Filtering: US-based respondents only
 - Data Cleaning: Age validation (18-80), gender standardization
@@ -121,7 +121,7 @@ The analysis generates the following outputs:
 - Encoding: Ordinal and label encoding for categorical variables
 - Scaling: StandardScaler for clustering compatibility
 
-2. Clustering Analysis (Modeling4.py)
+2. Clustering Analysis (Clustering.ipynb)
 
 - Algorithm Testing: K-Means, Agglomerative, Gaussian Mixture Models
 - Dimensionality Reduction: t-SNE for visualization
@@ -165,7 +165,6 @@ The analysis generates the following outputs:
 
 - Clustering Approach: t-SNE dimensionality reduction improved cluster interpretability
 - Validation Method: 7-seed stability testing (mean ARI = 0.638) confirms robustness
-- Missing Data: <10% missing in final features, handled with domain-appropriate imputation
 - Scaling: StandardScaler essential for distance-based algorithms
 - Feature Engineering: Ordinal encoding preserves meaningful variable relationships
 
