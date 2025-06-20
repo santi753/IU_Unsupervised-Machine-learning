@@ -48,24 +48,36 @@ bashpip install jupyter notebook
 
 ## 🚀 How to Run
 
-1. Clone the Repository
-bashgit clone https://github.com/santi753/IU_Unsupervided-Machine-learning.git
-cd mental-health-tech-analysis
+### Clone the Repository
 
-2. Download the Dataset
+```bashgit clone https://github.com/santi753/IU_Unsupervided-Machine-learning.git
+cd mental-health-tech-analysis
+```
+
+### Download the Dataset
+
 Download mental-heath-in-tech-2016_20161114.csv from the original survey
 Place it in the project root directory
 
-3. Run the Analysis
-Option A: Complete Pipeline
-bashpython Preprocessed_2.py  # Data cleaning and preprocessing
-python Modeling4.py       # Clustering analysis and results
-Option B: Jupyter Notebooks (Recommended)
+
+Run the Analysis
+
+Option A: Jupyter Notebooks (Recommended)
 bashjupyter notebook
+
 Open and run Preprocessed_2.ipynb then Modeling4.ipynb
 
-4. View Results
+Option B: Python Scripts
+If you prefer to run the notebooks as scripts:
+bashjupyter nbconvert --to script Preprocessed_2.ipynb
+jupyter nbconvert --to script Modeling4.ipynb
+python Preprocessed_2.py  # Data cleaning and preprocessing
+python Modeling4.py       # Clustering analysis and results
+
+View Results
 The analysis generates:
+
+
 mental_health_features_cleaned.xlsx - Cleaned dataset
 mental_health_scaled_final.csv - Preprocessed features
 Various visualization plots saved as PNG files
