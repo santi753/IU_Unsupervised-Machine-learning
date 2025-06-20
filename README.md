@@ -39,54 +39,74 @@ The analysis provides HR leadership with:
 
 ### Prerequisites
 
-Python 3.7+
-```
-pip package manager
-```
+- **Python 3.9+** (Python 3.10 or 3.11 recommended for optimal performance)
+- **pip package manager** (usually comes pre-installed with Python)
+
+> **Note:** To verify your Python and pip installation, run:
+> ```bash
+> python --version
+> pip --version
+> ```
+> If pip is not installed, follow the [official pip installation guide](https://pip.pypa.io/en/stable/installation/).
 
 ### Required Libraries
 
-```
+Install all required dependencies using pip:
+
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy
-``` 
+```
 
 ## 🚀 How to Run
 
-### Clone the Repository
+### Step 1: Clone the Repository
 
-```bashgit clone https://github.com/santi753/IU_Unsupervided-Machine-learning.git
-cd mental-health-tech-analysis
+```bash
+git clone https://github.com/santi753/IU_Unsupervided-Machine-learning.git
+cd IU_Unsupervided-Machine-learning
 ```
 
-### Download the Dataset
+### Step 2: Verify Dataset
 
-Download mental-heath-in-tech-2016_20161114.csv from the original survey
-Place it in the project root directory
+The dataset `mental-heath-in-tech-2016_20161114.csv` is already included in the repository.
 
+### Step 3: Run the Analysis
 
-Run the Analysis
+#### Option A: Jupyter Notebooks (Recommended)
 
-Option A: Jupyter Notebooks (Recommended)
-bashjupyter notebook
+1. Start Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
 
-Open and run Preprocessed_2.ipynb then Modeling4.ipynb
+2. Open and run the notebooks in the following order:
+   - `Preprocessed_2.ipynb` (data cleaning and preprocessing)
+   - `Modeling4.ipynb` (clustering analysis and results)
 
-Option B: Python Scripts
-If you prefer to run the notebooks as scripts:
-bashjupyter nbconvert --to script Preprocessed_2.ipynb
-jupyter nbconvert --to script Modeling4.ipynb
-python Preprocessed_2.py  # Data cleaning and preprocessing
-python Modeling4.py       # Clustering analysis and results
+#### Option B: Python Scripts
 
-View Results
-The analysis generates:
+If you prefer to run the notebooks as Python scripts:
 
+1. Convert notebooks to Python scripts:
+   ```bash
+   jupyter nbconvert --to script Preprocessed_2.ipynb
+   jupyter nbconvert --to script Modeling4.ipynb
+   ```
 
-mental_health_features_cleaned.xlsx - Cleaned dataset
-mental_health_scaled_final.csv - Preprocessed features
-Various visualization plots saved as PNG files
-Detailed cluster analysis and HR recommendations
+2. Run the scripts in order:
+   ```bash
+   python Preprocessed_2.py  # Data cleaning and preprocessing
+   python Modeling4.py       # Clustering analysis and results
+   ```
 
+### Step 4: View Results
+
+The analysis generates the following outputs:
+
+- `mental_health_features_cleaned.xlsx` - Cleaned dataset
+- `mental_health_scaled_final.csv` - Preprocessed features  
+- Various visualization plots saved as PNG files
+- Detailed cluster analysis and HR recommendations
 
 ## 🔍 Analysis Pipeline
 
