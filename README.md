@@ -70,7 +70,7 @@ cd IU_Unsupervised-Machine-learning
 
 ### Step 2: Verify Dataset
 
-The dataset `mental-health-in-tech-2016_20161114.csv` is already included in the repository or at https://www.kaggle.com/datasets/osmi/mental-health-in-tech-2016.
+The dataset `mental-heath-in-tech-2016_20161114.csv` is already included in the repository or at https://www.kaggle.com/datasets/osmi/mental-health-in-tech-2016.
 
 ### Step 3: Run the Analysis
 
